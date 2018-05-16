@@ -6,7 +6,7 @@ public class MyClass {
 		String s=sc.next();
 		char ch[]=s.toCharArray();
 		String rev="";
-		if(s!="")
+		if(s!=""&& s.length()<=10000)
 		{
 			for(int i=ch.length-1;i>=0;i--)
 			{
