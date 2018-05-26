@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class MyClass {
+    public static void main(String args[]) {
+       Scanner sc=new Scanner(System.in);
+       int yr=sc.nextInt();
+       if(yr<100)
+       System.out.println(1);
+       else
+       {
+       int num=yr/100;
+       if(yr%10==0)
+       System.out.println(num);
+       else
+       System.out.println(++num);
+       }
+       
+    }
+}
