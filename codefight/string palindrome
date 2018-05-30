@@ -1,0 +1,28 @@
+oolean checkPalindrome(String inputString) {
+  /*   NORMAL METHOD
+  
+  String rev="";
+    int len=inputString.length();
+         for(int i=len-1;i>=0;i--)
+         {
+              rev=rev+inputString.charAt(i);
+         }
+     if(inputString.equals(rev))
+          return true;
+     else
+          return false;*/
+          
+          
+          
+          //FOR EXEC TIME LIMIT 3 SEC
+     StringBuilder sb=new StringBuilder();
+     sb.append(inputString);
+     sb=sb.reverse();
+     String rev=sb.toString();
+     if(inputString.equals(rev))
+          return true;
+     else
+          return false;
+     
+     
+}
